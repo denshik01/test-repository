@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const greeting = "Это тестовый проект ФИО";
-
+  // eslint-disable-next-line no-console
   console.log('This is App ');
   return (
     <div className="App">
