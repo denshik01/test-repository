@@ -2,10 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const greeting = "Это тестовый проект Цвигула Дениса Андреевича!";
-/* eslint-disable no-console */
-  console.log("This is App ");
-/* eslint-enable no-console */
+  const greeting = "Это тестовый проект Цвигула Дениса Андреевича!!";
+
   return (
     <div className="App">
      <header className="App-header">
