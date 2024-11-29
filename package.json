@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false",
+    "test": "react-scripts test -- --watchAll=false",
     "lint": "eslint src/**.js"
   },
   "eslintConfig": {
@@ -24,7 +24,15 @@
     ],
     "rules": {
       "no-console": "error"
-    }
+    },
+    "overrides": [
+      {
+        "files": ["**/*.test.js", "**/__tests__/*.js"],
+        "rules": {
+          "no-console": "off"
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [
@@ -39,6 +47,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.57.1"
+    "eslint": "^8.57.1",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
   }
 }
