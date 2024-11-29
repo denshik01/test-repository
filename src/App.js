@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const greeting = "Это тестовый проект Цвигула Дениса Андреевича";
+  const greeting = "Это тестовый проект Цвигула Дениса Андреевича!";
 /* eslint-disable no-console */
   console.log("This is App ");
 /* eslint-enable no-console */
