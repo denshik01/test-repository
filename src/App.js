@@ -3,8 +3,9 @@ import './App.css';
 
 function App() {
   const greeting = "Это тестовый проект ФИО";
-
-  console.log('This is App ');
+/* eslint-disable no-console */
+  console.log("This is App ");
+/* eslint-enable no-console */
   return (
     <div className="App">
      <header className="App-header">
