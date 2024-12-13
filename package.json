@@ -24,7 +24,18 @@
     ],
     "rules": {
       "no-console": "error"
-    }
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.test.js",
+          "**/__tests__/*.js"
+        ],
+        "rules": {
+          "no-console": "off"
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [
@@ -39,6 +50,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
+    "babel-jest": "^29.7.0",
     "eslint": "^8.57.1"
   }
 }
